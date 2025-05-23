@@ -1,0 +1,20 @@
+header {
+    width: 100%;
+    padding: 28px 8%;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    font-size: 25px;
+    color: brown;
+}
+
+#nav_list {
+    display: flex;
+}
