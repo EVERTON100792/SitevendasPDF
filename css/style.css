@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #dbe6f6);
+}
+
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.destaques {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  padding: 20px;
+  gap: 20px;
+  background: #fff;
+}
+
+.produto {
+  width: 200px;
+  background: #eaeaea;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.produto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.produto h3 {
+  margin: 10px 0 5px;
+}
+
+.produto p {
+  color: #555;
+  font-weight: bold;
+}
+
+.botao-comprar {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botao-comprar:hover {
+  background-color: #218838;
+}
+
+.whatsapp {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 20px;
+}

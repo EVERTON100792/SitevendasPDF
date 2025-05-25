@@ -1,64 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="src/styles/header.css">
-    <link rel="stylesheet" href="src/styles/styles.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="src/javascript/script.js"></script>
-
-    
-    <title>Vendas PDF</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loja de PDFs</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <i class="fa-solid fa-book" id="nav_logo">PDF</i>
+  <header>
+    <nav>
+      <a href="#destaques">Destaques</a>
+    </nav>
+  </header>
 
-            <ul id="nav_list">
-                <li class="nav-item active">
-                    <a href="#home">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu">Catalogo</a>
-                </li>
-                 <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
-                </li>
-            </ul>
-            <button class="btn-default">
-                Compre aqui
-            </button>
+  <section id="destaques" class="destaques">
+    <div class="produto">
+      <img src="img/pdf1.jpg" alt="Produto 1" />
+      <h3>PDF Matemática</h3>
+      <p>R$ 9,90</p>
+      <button class="botao-comprar" onclick="comprar('matematica.pdf')">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="img/pdf2.jpg" alt="Produto 2" />
+      <h3>PDF História</h3>
+      <p>R$ 12,00</p>
+      <button class="botao-comprar" onclick="comprar('historia.pdf')">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="img/pdf3.jpg" alt="Produto 3" />
+      <h3>PDF Ciências</h3>
+      <p>R$ 10,50</p>
+      <button class="botao-comprar" onclick="comprar('ciencias.pdf')">Comprar</button>
+    </div>
+  </section>
 
-            <button class="mobile_btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
+  <footer>
+    Após a compra, entre em contato pelo WhatsApp com o comprovante para receber a senha do arquivo PDF.<br />
+    <a
+      href="https://wa.me/5599999999999?text=Olá,%20gostaria%20de%20comprar%20um%20PDF"
+      target="_blank"
+      class="whatsapp"
+      >Fale conosco no WhatsApp</a
+    >
+  </footer>
 
-        <div id="mobile_menu">
-            <ul id="mobile_nave_list">
-                <li class="nav-item">
-                    <a href="#home">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu">Catalogo</a>
-                </li>
-                 <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
-                </li>
-            </ul>
-
-            <button class="btn-default">
-                Compre aqui
-            </button>
-        </div>
-
-        
-
-    </header>
+  <script>
+    function comprar(arquivo) {
+      alert(
+        "Para finalizar a compra de " +
+          arquivo +
+          ", entre em contato conosco com o comprovante para receber a senha do PDF."
+      );
+    }
+  </script>
 </body>
 </html>
